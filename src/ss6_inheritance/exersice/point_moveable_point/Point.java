@@ -34,7 +34,7 @@ public class Point {
     }
 
     public float[] getXY() {
-        return new float[]{this.x,this.y};
+        return new float[]{this.x, this.y};
     }
 
     @Override
