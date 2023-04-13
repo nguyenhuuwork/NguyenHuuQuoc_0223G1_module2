@@ -1,4 +1,4 @@
-package ss9_dsa_list.practice;
+package ss10_dsa_list.practice;
 
 import java.util.Arrays;
 
