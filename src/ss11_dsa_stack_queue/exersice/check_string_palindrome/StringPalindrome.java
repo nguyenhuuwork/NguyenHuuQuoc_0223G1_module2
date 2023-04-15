@@ -1,4 +1,4 @@
-package ss11_dsa_stack_queue.exersice.check_string_Palindrome;
+package ss11_dsa_stack_queue.exersice.check_string_palindrome;
 
 import java.util.*;
 
