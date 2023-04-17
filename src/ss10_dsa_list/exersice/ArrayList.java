@@ -3,7 +3,7 @@ package ss10_dsa_list.exersice;
 import java.util.Arrays;
 
 public class ArrayList<E> {
-    private int size = 0;
+    public int size = 0;
     public static final int DEFAULT_CAPACITY = 5;
     private Object[] element;
 
