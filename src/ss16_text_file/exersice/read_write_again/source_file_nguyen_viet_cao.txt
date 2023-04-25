@@ -1,0 +1,2 @@
+"nguyen viet cao",1.71,85.67,001,"dien ban quang nam"
+"nguyen viet lun",1.50,91.25,002,"dien ngoc quang nam"
