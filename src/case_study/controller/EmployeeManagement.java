@@ -1,9 +1,12 @@
 package case_study.controller;
 
+import case_study.service.EmployeeService;
+
 import java.util.Scanner;
 
 public class EmployeeManagement {
     public void employeeManagementMenu() {
+        EmployeeService employeeService = new EmployeeService();
         Scanner sc = new Scanner(System.in);
         boolean flag = true;
         do {
@@ -22,10 +25,10 @@ public class EmployeeManagement {
             }
             switch (inputOption1) {
                 case 1:
-                    /// display list employee
+                    employeeService.displayEmpoyeeList();
                     break;
                 case 2:
-                    //// add new employee
+                    employeeService.addNewEmployee();
                     break;
                 case 3:
                     /// edit employee;

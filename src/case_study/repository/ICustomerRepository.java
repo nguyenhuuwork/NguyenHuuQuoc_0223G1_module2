@@ -1,4 +1,4 @@
 package case_study.repository;
 
-public interface ICustomerRepository extends IFuramaRepository{
+public interface ICustomerRepository {
 }

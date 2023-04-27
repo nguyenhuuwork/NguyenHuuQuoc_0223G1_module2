@@ -1,4 +1,11 @@
 package case_study.repository;
 
-public interface IEmployeeRepository extends IFuramaRepository{
+import case_study.model.Employee;
+
+import java.util.List;
+
+public interface IEmployeeRepository {
+    List<Employee> getEmployee();
+
+    void addNewEmployee(Employee employee);
 }

@@ -1,4 +1,7 @@
 package case_study.service;
 
-public interface IEmployeeService extends IFuramaService{
+public interface IEmployeeService {
+    void displayEmpoyeeList();
+    void addNewEmployee();
+
 }
