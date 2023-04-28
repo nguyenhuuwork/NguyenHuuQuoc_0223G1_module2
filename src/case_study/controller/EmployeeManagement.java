@@ -31,7 +31,7 @@ public class EmployeeManagement {
                     employeeService.addNewEmployee();
                     break;
                 case 3:
-                    /// edit employee;
+                    employeeService.editEmployee();
                     break;
                 case 4:
                     flag = false;

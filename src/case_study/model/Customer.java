@@ -32,9 +32,17 @@ public class Customer extends Person {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "Customer{" + super.toString() +
                 "customerType='" + customerType + '\'' +
                 ", address='" + address + '\'' +
                 '}';
+    }
+
+    //String code, String name, String dateOfBirth, boolean gender, String indentity, String phoneNumber,
+//                    String email, String customerType, String address
+    public String getInformationToCsvCustomer() {
+        return super.getCode() + "" + super.getName() + "" + super.getDateOfBirth() + "" + super.isGender() + "" +
+                super.getIndentity() + "" + super.getPhoneNumber() + "" + super.getEmail() + "" + this.customerType +
+                "" + this.address;
     }
 }
