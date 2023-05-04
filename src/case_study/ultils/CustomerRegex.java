@@ -15,7 +15,8 @@ public class CustomerRegex {
         return code.matches(REGEX_CUSTOMER_CODE) ? true : false;
     }
 
-    private static final String REGEX_CUSTOMER_NAME = "^[A-Z]$";
+    private static final String REGEX_CUSTOMER_NAME = "^([\\p{Lu}][\\p{Ll}]{1,8})(\\s([\\p{Lu}]|[\\p{Lu}][\\p{Ll}]{1,10}" +
+            ")){0,5}$";
 
     public static boolean checkName(String name) {
         return name.matches(REGEX_CUSTOMER_NAME) ? true : false;

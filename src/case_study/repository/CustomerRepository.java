@@ -22,4 +22,24 @@ public class CustomerRepository implements ICustomerRepository {
         customerList.add(customer);
         ReadAndWriteCustomer.writeCustomerListToFile(customerList, CUSTOMER_FILE_PATH);
     }
+
+    @Override
+    public Customer findCustomerByCode(String code) {
+        for (int i = 0; i < customerList.size(); i++) {
+            if (customerList.get(i).getCode().equals(code.trim())) {
+                return customerList.get(i);
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public void editCustomer(String code, Customer customer) {
+        for (int i = 0; i < customerList.size(); i++) {
+            if (customerList.get(i).equals(customer)) {
+                customerList.set(i,customer);
+                ReadAndWriteCustomer.writeCustomerListToFile(customerList,CUSTOMER_FILE_PATH);
+            }
+        }
+    }
 }

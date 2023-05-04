@@ -3,7 +3,8 @@ package case_study.model;
 public class Room extends Facility {
     private String freeServiceIncluded;
 
-    public Room(String codeService, String nameService, double areaFacility, double chargeRent, int maximumPeople, String date, String freeServiceIncluded) {
+    public Room(String codeService, String nameService, double areaFacility, double chargeRent, int maximumPeople,
+                String date, String freeServiceIncluded) {
         super(codeService, nameService, areaFacility, chargeRent, maximumPeople, date);
         this.freeServiceIncluded = freeServiceIncluded;
     }
@@ -21,7 +22,7 @@ public class Room extends Facility {
 
     @Override
     public String toString() {
-        return "Room{" +
+        return "Room{" + super.toString() +
                 "freeServiceIncluded='" + freeServiceIncluded + '\'' +
                 '}';
     }

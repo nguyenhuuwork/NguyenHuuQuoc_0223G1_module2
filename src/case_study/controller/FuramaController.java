@@ -3,8 +3,8 @@ package case_study.controller;
 import java.util.Scanner;
 
 public class FuramaController {
-    EmployeeManagement employeeManagement = new EmployeeManagement();
-    BookingManagement bookingManagement = new BookingManagement();
+   private EmployeeManagement employeeManagement = new EmployeeManagement();
+   private BookingManagement bookingManagement = new BookingManagement();
     CustomerManagement customerManagement = new CustomerManagement();
     FacilityManagement facilityManagement = new FacilityManagement();
     PromotionManagement promotionManagement = new PromotionManagement();

@@ -31,7 +31,8 @@ public class CustomerManagement {
                 case 2:
                     customerService.addNewCustomerList();
                     break;
-                case 3: /// edit customer
+                case 3:
+                    customerService.editCustomerList();
                     break;
                 case 4:
                     flag = false;

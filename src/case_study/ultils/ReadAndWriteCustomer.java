@@ -32,7 +32,7 @@ public class ReadAndWriteCustomer {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line = null;
             while ((line = bufferedReader.readLine()) != null) {
-                String[] arrCus = line.split("");
+                String[] arrCus = line.split(",");
 //String code, String name, String dateOfBirth, boolean gender, String indentity, String phoneNumber,
 //                    String email, String customerType, String address
                 Customer customer = new Customer(arrCus[0], arrCus[1], arrCus[2], Boolean.parseBoolean(arrCus[3]), arrCus[4]

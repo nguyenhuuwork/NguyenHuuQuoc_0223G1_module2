@@ -1,8 +1,12 @@
 package case_study.controller;
 
+import case_study.service.FacilityService;
+
 import java.util.Scanner;
 
 public class FacilityManagement {
+    FacilityService facilityService = new FacilityService();
+
     public void facilityManagementController() {
         Scanner sc = new Scanner(System.in);
         boolean flag = true;
@@ -22,10 +26,10 @@ public class FacilityManagement {
             }
             switch (inputOpiton3) {
                 case 1:
-                    /// display list customer
+                    facilityService.displayFacilityMenu();
                     break;
                 case 2:
-                    //// add new customer
+                    facilityService.addNewFacility();
                     break;
                 case 3: /// edit customer
                     break;

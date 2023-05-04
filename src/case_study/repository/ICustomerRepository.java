@@ -9,6 +9,8 @@ public interface ICustomerRepository {
 
     void addNewCustomer(Customer customer);
 
+    Customer findCustomerByCode(String code);
 
+    void editCustomer(String code, Customer customer);
 
 }
